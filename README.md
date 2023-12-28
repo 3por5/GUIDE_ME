@@ -1,1 +1,5 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+# ABOUT
+
+Guide Me is a mockup project to create a network of mentors and mentorees, either hoping to share knowledge or finding some sort of direction in their career.
+
+This is a project created for the Le Wagon's Web Development course.
