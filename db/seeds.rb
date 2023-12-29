@@ -4,13 +4,6 @@ require "open-uri"
 user = User.new(email: "teste@teste.com.br", password: "123123", name: "nome_teste", job: "job_teste", company: "company_teste")
 user.save!
 
-# user = User.new(email: "pedro@teste.com.br", password: "123123", name: "Pedro", job: "Full-stack developer", description: "essa é uma descrição descrita a fim de descrever descrições")
-
-# program = Program.new(user: user, category: "rails", name: "aprenda rails", description: "esse programa é massa")
-# program.save!
-# program = Program.new(user: user, category: "ruby", name: "aprenda ruby", description: "esse programa também é massa")
-# program.save!
-
 people = {
   person1: {
     name: "Ana Luiza Almeida",
@@ -31,7 +24,7 @@ people = {
     program_category: "Desenvolvimento",
     company: "Pixel Solutions",
     email: "ana.luiza@example.com",
-    photo_url: "https://res.cloudinary.com/ddv8elvhi/image/upload/v1691189066/ana_luiza_sc9pdw.png"
+    photo_url: "https://res.cloudinary.com/guide-me/image/upload/v1703815461/guide-me%20avatars/lmagl4xuhxhtzru71ksb.png"
   },
   person2: {
     name: "Lucas Oliveira",
@@ -42,7 +35,7 @@ people = {
     program_category: "Desenvolvimento",
     company: "DataMinds",
     email: "lucas.oliveira@example.com",
-    photo_url: "https://res.cloudinary.com/ddv8elvhi/image/upload/v1691189068/lucas_oliveira_kliwm1.png"
+    photo_url: "https://res.cloudinary.com/guide-me/image/upload/v1703815461/guide-me%20avatars/dwr303u3ifbiq4htvcmy.png"
   },
   person3: {
     name: "Marina Silva",
@@ -53,7 +46,7 @@ people = {
     program_category: "Design",
     company: "InnovationLabs",
     email: "marina.silva@example.com",
-    photo_url: "https://res.cloudinary.com/ddv8elvhi/image/upload/v1691189068/marina_silva_mpbhyn.png"
+    photo_url: "https://res.cloudinary.com/guide-me/image/upload/v1703815462/guide-me%20avatars/lswxzeqvykxf0rwvkau7.png"
   },
   person4: {
     name: "Rafael Santos",
@@ -64,7 +57,7 @@ people = {
     program_category: "Desenvolvimento",
     company: "ArtCraft Studios",
     email: "rafael.santos@example.com",
-    photo_url: "https://res.cloudinary.com/ddv8elvhi/image/upload/v1691189068/rafael_santos_h67nac.png"
+    photo_url: "https://res.cloudinary.com/guide-me/image/upload/v1703815462/guide-me%20avatars/x3bezo6ycdpwkktcpzpl.png"
   },
   person5: {
     name: "Pedro Mendes",
@@ -76,7 +69,7 @@ people = {
     program_category: "Desenvolvimento",
     company: "MarketPro Solutions",
     email: "pedro.mendes@example.com",
-    photo_url: "https://res.cloudinary.com/ddv8elvhi/image/upload/v1691189068/pedro_mendes_ukci3t.png"
+    photo_url: "https://res.cloudinary.com/guide-me/image/upload/v1703815462/guide-me%20avatars/xafrfv5fdqvmujfneejq.png"
   },
   person6: {
     name: "Camila Costa",
@@ -87,7 +80,7 @@ people = {
     program_category: "Segurança",
     company: "AccurateSecurity",
     email: "camila.costa@example.com",
-    photo_url: "https://res.cloudinary.com/ddv8elvhi/image/upload/v1691189066/camila_costa_zpwr4u.png"
+    photo_url: "https://res.cloudinary.com/guide-me/image/upload/v1703815462/guide-me%20avatars/nt7yxnclm9otgbt336nv.png"
   },
   person7: {
     name: "Felipe Souza",
@@ -98,7 +91,7 @@ people = {
     program_category: "Ciência de Dados",
     company: "TalentHub Solutions",
     email: "felipe.souza@example.com",
-    photo_url: "https://res.cloudinary.com/ddv8elvhi/image/upload/v1691189067/felipe_souza_fzo7k4.png"
+    photo_url: "https://res.cloudinary.com/guide-me/image/upload/v1703815462/guide-me%20avatars/wqgjqpybt5dopfwlzfhe.png"
   },
   person8: {
     name: "Vanessa Ferreira",
@@ -109,7 +102,7 @@ people = {
     program_category: "Desenvolvimento",
     company: "TechSellers",
     email: "vanessa.ferreira@example.com",
-    photo_url: "https://res.cloudinary.com/ddv8elvhi/image/upload/v1691189068/vanessa_ferreira_v00i0s.png"
+    photo_url: "https://res.cloudinary.com/guide-me/image/upload/v1703815461/guide-me%20avatars/r5dul0ifndue0qkmfqbt.png"
   },
   person9: {
     name: "Rafael Castro",
@@ -120,7 +113,7 @@ people = {
     program_category: "Design",
     company: "UX Innovations",
     email: "rafael.castro@example.com",
-    photo_url: "https://res.cloudinary.com/ddv8elvhi/image/upload/v1691189068/rafael_castro_gsgetv.png"
+    photo_url: "https://res.cloudinary.com/guide-me/image/upload/v1703815462/guide-me%20avatars/hjlxyeqrtjw6su1vmiil.png"
   },
   person10: {
     name: "Bianca Oliveira",
@@ -131,7 +124,7 @@ people = {
     program_category: "Segurança",
     company: "WordCrafters",
     email: "bianca.oliveira@example.com",
-    photo_url: "https://res.cloudinary.com/ddv8elvhi/image/upload/v1691189067/bianca_oliveira_vpfxki.png"
+    photo_url: "https://res.cloudinary.com/guide-me/image/upload/v1703815462/guide-me%20avatars/bactwmzi2yr75fb3gioq.png"
   },
   person11: {
     name: "Gustavo Rodrigues",
@@ -142,7 +135,7 @@ people = {
     program_category: "Ciência de Dados",
     company: "DataOptimize",
     email: "gustavo.rodrigues@example.com",
-    photo_url: "https://res.cloudinary.com/ddv8elvhi/image/upload/v1691189067/gustavo_rodrigues_bmasaw.png"
+    photo_url: "https://res.cloudinary.com/guide-me/image/upload/v1703815462/guide-me%20avatars/dljexrad5lnmny2r9ymo.png"
   },
   person12: {
     name: "Isabela Almeida",
@@ -153,7 +146,7 @@ people = {
     program_category: "Design",
     company: "ProjectLink Solutions",
     email: "isabela.almeida@example.com",
-    photo_url: "https://res.cloudinary.com/ddv8elvhi/image/upload/v1691189067/isabela_almeida_bgau3r.png"
+    photo_url: "https://res.cloudinary.com/guide-me/image/upload/v1703815462/guide-me%20avatars/c2upcuof3ulhsgdhepnc.png"
   }
 }
 

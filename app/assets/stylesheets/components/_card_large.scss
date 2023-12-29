@@ -29,10 +29,11 @@
 .card-large-header {
   display: flex;
   align-items: center;
-  background-color: $primary-01;
+  // background-color: $primary-01;
   color: $primary-05;
-  height: 70px;
+  height:64px;
   padding-left: 16px;
+  padding-top: 16px;
 }
 
 .card-large-header h5 {
@@ -61,7 +62,7 @@
   display: flex;
   justify-content: center;
   align-items: start;
-  margin-top: 16px;
+  margin-top: 4px;
 }
 
 .card-large-text {
@@ -101,7 +102,7 @@
 
 .image-container:hover {
   transition: transform 0.2s ease;
-  outline: 2px solid $secondary-05;
+  outline: 2px solid $primary-05;
 }
 
 .card-large-user-info {
@@ -111,13 +112,13 @@
 }
 
 .card-large-user-info-link {
-  color: $secondary-05;
-  font-weight: 600;
+  color: $primary-05;
+  font-weight: 700;
   text-decoration: none;
 }
 
 .card-large-user-info-link:hover {
-  color: $secondary-05;
+  // color: $secondary-05;
   font-weight: 800;
   text-decoration: none;
 }

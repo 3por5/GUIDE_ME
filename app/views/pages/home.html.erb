@@ -23,7 +23,7 @@
             </div>
             <div class="card-large-user-info">
               <div><%= link_to User.find(program.user_id).name, profile_path(User.find(program.user_id)), class: "card-large-user-info-link" %></div>
-              <div><%= link_to User.find(program.user_id).job, profile_path(User.find(program.user_id).job), class: "card-large-user-info-job" %></div>
+              <div><%= link_to User.find(program.user_id).job, profile_path(User.find(program.user_id)), class: "card-large-user-info-job" %></div>
             </div>
           </div>
         </div>
